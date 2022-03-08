@@ -67,14 +67,14 @@ function removeAlerts() {
 
 // check first name
 function firstValidation() {
-	let inputValue = firstNameInput.value;
+	let inputValue = firstNameInput.value.trim();
 	if (inputValue !== null && inputValue.length >= 2) return true;
 	else return false;
 }
 
 // check last name
 function lastValidation() {
-	let inputValue = lastNameInput.value;
+	let inputValue = lastNameInput.value.trim();
 	if (inputValue !== null && inputValue.length >= 2) return true;
 	else return false;
 }
