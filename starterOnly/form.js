@@ -90,16 +90,20 @@ function birthdateValidation() {
 	let birthdate = new Date(birthdateInput.value);
 	let today = new Date();
 	if (birthdate.toString() !== "Invalid Date") {
-		if (
-			birthdate.getDate() >= today.getDate() &&
-			birthdate.getMonth() == today.getMonth() &&
-			birthdate.getFullYear() == today.getFullYear()
-		) {
+
+		if(birthdate.getDay() > today.getDay() &&
+		birthdate.getMonth() >= today.getMonth() && 
+		birthdate.getFullYear() == today.getFullYear() ||
+		birthdate.getFullYear() > today.getFullYear())
+		{
 			return false;
-		} else {
+		}
+		else{
 			return true;
 		}
-	} else {
+	} 
+	else 
+	{
 		return false;
 	}
 }

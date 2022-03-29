@@ -177,9 +177,9 @@ main {
 }
 .confirm-modal-message {
 	font-size: 36px;
-  margin : 300px 180px 300px 0px;
-  width: 100%;
-  text-align: center;
+  	margin : 300px 180px 300px 0px;
+  	width: 100%;
+  	text-align: center;
 }
 @media screen and (max-width: 400px){
   .confirm-modal-message{
